@@ -36,6 +36,13 @@ tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
 st.title("Email/SMS Spam Classifier")
+model = pickle.load(open('model.pkl','rb'))
+
+st.title("Email/SMS Spam Classifier")
+st.header("Instructions")
+st.text("1. copy the email/sms you want to verify.")
+st.text("2. Paste it below and click on predict.")
+st.text("3. You will receive the predicted results.")
 
 input_sms = st.text_area("Enter the message")
 
